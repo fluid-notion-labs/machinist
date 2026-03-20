@@ -1,0 +1,39 @@
+# build tools
+build-essential
+binutils
+gcc
+g++
+make
+cmake
+pkg-config
+libssl-dev
+
+# version control
+git
+
+# networking
+curl
+wget
+nmap
+
+# utilities
+unzip
+zip
+jq
+tree
+
+# modern cli tools
+ripgrep
+fd-find
+bat
+htop
+
+# editors
+neovim
+
+# gnome
+gnome-tweaks
+dconf-editor
+
+# clipboard (wayland)
+wl-clipboard

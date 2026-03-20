@@ -1,0 +1,9 @@
+# cargo packages
+cargo-watch
+cargo-edit
+cargo-expand
+
+# cli tools
+zellij
+nushell
+just
