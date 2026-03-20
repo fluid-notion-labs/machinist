@@ -7,3 +7,6 @@ cargo-expand
 zellij
 nushell
 just
+gitui
+ripgrep
+dua-cli

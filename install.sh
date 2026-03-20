@@ -3,34 +3,18 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$SCRIPT_DIR"
-
 source lib/config.sh
 
 log() { echo -e "\n\033[1;34m==>\033[0m \033[1m$*\033[0m"; }
 
-log "apt packages"
-bash installers/apt.sh
-
-log "rustup"
-bash installers/rustup.sh
-
-log "cargo packages"
-bash installers/rust.sh
-
-log "nvm"
-bash installers/nvm.sh
-
-log "node global packages"
-bash installers/node.sh
-
-log "uv"
-bash installers/uv.sh
-
-log "uv tools"
-bash installers/uv-tools.sh
-
-log "dconf settings"
-bash installers/dconf.sh
+for f in "$MACHINIST_DIR"/installers/[0-9]*.sh; do
+    [ -r "$f" ] || continue
+    echo -e "\n\033[1;34m==>\033[0m \033[1m$f\033[0m"
+    bash "$f"
+    for c in "$MACHINIST_DIR"/config.d/[0-9]*.sh; do
+        [ -r "$c" ] && . "$c" || true
+    done
+done
 
 log "adding machinist to .bashrc"
 BASHRC="$HOME/.bashrc"
