@@ -5,8 +5,8 @@ cargo-expand
 
 # cli tools
 zellij
-nushell
-just
-gitui
-ripgrep
-dua-cli
+#nu
+#just
+#gitui
+#ripgrep
+#dua-cli
