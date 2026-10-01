@@ -29,7 +29,8 @@ fi
 SDKMANAGER="$CMDLINE_TOOLS_DIR/bin/sdkmanager"
 
 # accepts all remaining sdk licenses non-interactively
-yes | "$SDKMANAGER" --licenses > /dev/null
+# (`yes` exits 141 on SIGPIPE, so pipefail would abort the script without this)
+yes | "$SDKMANAGER" --licenses > /dev/null || true
 
 "$SDKMANAGER" \
     "platform-tools" \
