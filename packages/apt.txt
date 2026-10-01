@@ -39,6 +39,9 @@ wl-clipboard
 xz-utils
 file
 libglu1-mesa
+libgtk-3-dev
+ninja-build
+clang
 
 # android sdk (headless, no Android Studio)
 openjdk-17-jdk
