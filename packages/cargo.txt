@@ -5,6 +5,9 @@ cargo-expand
 
 # cli tools
 zellij
+ripgrep
+fd-find
+bat
 #nu
 #just
 #gitui

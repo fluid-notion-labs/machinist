@@ -23,9 +23,6 @@ jq
 tree
 
 # modern cli tools
-ripgrep
-fd-find
-bat
 htop
 
 # editors
