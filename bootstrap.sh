@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-MACHINIST_REPO="https://github.com/fluid-notion-systems/machinist"
+MACHINIST_REPO="https://github.com/fluid-notion-labs/machinist"
 MACHINIST_DIR="$HOME/.local/share/machinist"
 
 echo "==> installing git"
