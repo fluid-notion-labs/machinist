@@ -6,13 +6,13 @@ Bootstrap a new Ubuntu machine and manage shell environment vars.
 
 On a fresh machine:
 ```bash
-curl -sSf https://raw.githubusercontent.com/YOU/machinist/main/bootstrap.sh | bash
+curl -sSf https://raw.githubusercontent.com/fluid-notion-labs/machinist/main/bootstrap.sh | bash
 ```
 
 Or manually:
 ```bash
 sudo apt install -y git
-git clone https://github.com/YOU/machinist ~/.local/share/machinist
+git clone https://github.com/fluid-notion-labs/machinist ~/.local/share/machinist
 cd ~/.local/share/machinist
 chmod +x install.sh installers/*.sh
 ./install.sh
@@ -21,7 +21,7 @@ chmod +x install.sh installers/*.sh
 ## Usage
 
 ```bash
-git clone https://github.com/YOU/machinist
+git clone https://github.com/fluid-notion-labs/machinist
 cd machinist
 chmod +x install.sh installers/*.sh
 ./install.sh
