@@ -34,3 +34,11 @@ dconf-editor
 
 # clipboard (wayland)
 wl-clipboard
+
+# flutter prerequisites
+xz-utils
+file
+libglu1-mesa
+
+# android sdk (headless, no Android Studio)
+openjdk-17-jdk
